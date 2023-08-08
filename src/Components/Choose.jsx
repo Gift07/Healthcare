@@ -18,9 +18,10 @@ const Choose = () => {
               Use Our Services For Your Health
             </h1>
             <p className="py-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorpe. Consectetur adipiscing elit. Lorem
-              ipsum dolor sit amet ut elit tellus, luctus nec ullamcorpe.{" "}
+              Your well-being is our top priority, and we are dedicated to
+              providing a wide range of comprehensive services to cater to your
+              unique health needs. With a team of experienced professionals and
+              state-of-the-art facilities
             </p>
             <ul>
               <li className="flex items-center gap-x-2 py-1">

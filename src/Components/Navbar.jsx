@@ -9,7 +9,8 @@ import {
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ modal, setModal }) => {
+  console.log(modal);
   const [sidebar, setSidebar] = useState(false);
   return (
     <div className="relative">
@@ -60,7 +61,10 @@ const Navbar = () => {
               <li>Help</li>
             </ul>
             <span>
-              <button className="px-8 py-2 bg-green-700 text-white rounded-full">
+              <button
+                onClick={() => setModal(!modal)}
+                className="px-8 py-2 bg-green-700 text-white rounded-full"
+              >
                 Book Appointment
               </button>
             </span>
@@ -90,7 +94,10 @@ const Navbar = () => {
                 <li className="py-2">Help</li>
               </ul>
               <span>
-                <button className="px-8 py-2 bg-green-700 text-white rounded-md">
+                <button
+                  onClick={() => setModal(!modal)}
+                  className="px-8 py-2 bg-green-700 text-white rounded-md"
+                >
                   Book Appointment
                 </button>
               </span>

@@ -22,9 +22,10 @@ const Services = () => {
               Regular Health Monitoring
             </h1>
             <p className="w-80 py-2">
-              Lorem ipsum dolor sit amet, consectet uradip iscing elit. Eget
-              amet pretium hendrerit tristiq ue nulla amet. Et lectus lacus
-              nulla quis natoque dictum.
+              we offer comprehensive regular health monitoring services. Our
+              dedicated team of healthcare professionals uses advanced
+              technologies and expertise to keep a close eye on your health,
+              ensuring early detection of any potential issues.
             </p>
             <h1 className="underline text-sky-500 cursor-pointer">
               Learn More
@@ -43,9 +44,10 @@ const Services = () => {
               Physiotherapy Services
             </h1>
             <p className="w-80 py-2">
-              Lorem ipsum dolor sit amet, consectet uradip iscing elit. Eget
-              amet pretium hendrerit tristiq ue nulla amet. Et lectus lacus
-              nulla quis natoque dictum.
+              {`At our healthcare facility, we understand the significance of 
+              mobility and rehabilitation in restoring health and enhancing lives. 
+              That's why we offer a range of specialized physiotherapy
+               services delivered by skilled professionals. `}
             </p>
             <h1 className="underline text-sky-500 cursor-pointer">
               Learn More
@@ -63,10 +65,10 @@ const Services = () => {
             <h1 className="text-2xl font-medium pt-2">
               Geriatrics & Nursing Care
             </h1>
-            <p className="w-80 py-2">
-              Lorem ipsum dolor sit amet, consectet uradip iscing elit. Eget
-              amet pretium hendrerit tristiq ue nulla amet. Et lectus lacus
-              nulla quis natoque dictum.
+            <p className="w-80 py-2 text-ellipsis">
+              {` We recognize the significance of specialized care for seniors, 
+                  and our geriatrics and nursing services are designed to provide the utmost comfort and support 
+                  during this stage of life with Our team of compassionate and skilled caregivers`}
             </p>
             <h1 className="underline text-sky-500 cursor-pointer">
               Learn More

@@ -6,17 +6,17 @@ const Footer = () => {
   return (
     <div className="w-full bg-green-200 font-Lato pt-14">
       <div className="px-8 md:px-24 lg:px-32">
-        <div className="w-full  flex flex-col lg:md:flex-row items-center justify-between">
+        <div className="w-full  flex flex-col lg:md:flex-row lg:md:items-center lg:md:justify-between">
           <div>
             <div className="py-1 pb-6">
               <img src="ancient.png" alt="ancient" className="h-16" />
             </div>
             <h1 className="max-w-xs">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+              At Ancient Healign, we are committed to being your dedicated
+              partner in achieving and maintaining optimal health
             </h1>
           </div>
-          <div className="w-full flex flex-col lg:md:flex-row items-center gap-x-0 lg:md:gap-x-24">
+          <div className="w-full lg:md:w-auto flex flex-col lg:md:flex-row items-center bg-yellow-500 gap-x-0 lg:md:gap-x-24">
             <div className="w-full ">
               <h1 className="py-6">Company</h1>
               <ul>

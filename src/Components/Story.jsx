@@ -33,14 +33,15 @@ const Story = () => {
           <h1 className="text-green-600 text-xl py-2 px-4 lg:md:px-0">
             Our Story
           </h1>
-          <h1 className="px-4 lg:md:px-0 text-green-500">
+          <h1 className="px-4 lg:md:px-0 text-green-500 text-2xl font-lora font-semibold">
             Making a difference with senior living
           </h1>
           <p className="text-lg pb-2 px-4 lg:md:px-0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non
-            sagittis, lectus in commodo nisl. Nisi, faucibus volutpat nullam
-            elit. Volutpat posuere sagittis, auctor leo aliquam urna. At a
-            gravida nulla in ut sit.
+            Our story began with a simple yet powerful vision - to transform
+            healthcare by placing compassion and excellence at its core. Founded
+            by a team of dedicated professionals, our healthcare center embarked
+            on a journey to make a difference in the lives of individuals and
+            families.
           </p>
           <div className=" text-white py-2 px-4 lg:md:px-0">
             <button className="bg-green-600 uppercase rounded-md px-5 py-2">
