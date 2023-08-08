@@ -19,11 +19,11 @@ const Navbar = ({ modal, setModal }) => {
           <div className="flex items-center gap-x-6">
             <div className="flex items-center gap-x-2 cursor-pointer">
               <BsFillTelephoneFill />
-              {`(808)-7099085`}
+              {`(301) 655 9760`}
             </div>
             <div className="flex items-center gap-x-2 cursor-pointer">
               <MdEmail />
-              {`info@ancient.com`}
+              {`care@ancienthealinghcs.com`}
             </div>
           </div>
           <div className="flex items-center gap-x-6">
