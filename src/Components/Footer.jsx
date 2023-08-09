@@ -29,22 +29,27 @@ const Footer = () => {
             </div>
             <div className="w-full">
               <h1 className="py-6">Company</h1>
-              <ul>
+ <ul>
                 <li className="flex items-center gap-x-2 py-1">
                   <BsFillBuildingsFill />
                   Ancient Building
                 </li>
                 <li className="flex items-start gap-x-2 py-1">
                   <MdLocationPin />
-                  Victoria Street,Virginia ,<br /> United States
+                  3022 Javier Rd, Suite 105A,FairFax ,Virginia 22031 ,<br />{" "}
+                  United States
                 </li>
                 <li className="flex items-center gap-x-2 py-1">
                   <IoCallSharp />
-                  {`(202) 2224 456677`}
+                  {`+13016559760`}
+                </li>
+                <li className="flex items-center gap-x-2 py-1">
+                  <IoCallSharp />
+                  Fax-{`703-645-0012`}
                 </li>
                 <li className="flex items-center gap-x-2 py-1">
                   <MdEmail />
-                  info@ancient.com
+                  {`care@ancienthealinghcs.com`}
                 </li>
               </ul>
             </div>
