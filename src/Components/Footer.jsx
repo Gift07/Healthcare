@@ -16,7 +16,7 @@ const Footer = () => {
               partner in achieving and maintaining optimal health
             </h1>
           </div>
-          <div className="w-full lg:md:w-auto flex flex-col lg:md:flex-row items-center bg-yellow-500 gap-x-0 lg:md:gap-x-24">
+          <div className="w-full lg:md:w-auto flex flex-col lg:md:flex-row items-start gap-x-0 lg:md:gap-x-24">
             <div className="w-full ">
               <h1 className="py-6">Company</h1>
               <ul>
