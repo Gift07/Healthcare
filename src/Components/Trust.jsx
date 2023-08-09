@@ -6,16 +6,16 @@ const Trust = () => {
     Aos.init({});
   }, []);
   return (
-    <div className="w-full h-[40rem]">
-      <div className="w-full h-auto relative">
+    <div className="w-full lg:md:h-[40rem] h-auto">
+      <div className="w-full h-full relative">
         <div>
           <img
             src="helping.jpg"
             alt="helping"
-            className="w-full h-[38rem] absolute object-cover"
+            className="w-full lg:md:h-[38rem] h-full absolute object-cover"
           />
         </div>
-        <div className="font-Lato bg-green-200 absolute h-[38rem] z-20 w-full bg-opacity-80 backdrop-blur-md">
+        <div className="font-Lato bg-green-200 absolute lg:md:h-[38rem] h-full z-20 w-full bg-opacity-80 backdrop-blur-md">
           <div className="w-full flex flex-col items-center justify-center py-12">
             <h1 className="text-xl text-green-500">Get to know about us </h1>
             <h1 className="font-lora text-3xl font-semibold">
