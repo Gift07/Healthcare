@@ -19,11 +19,21 @@ const Home = () => {
       )}
       <div className="absolute w-full">
         <Navbar modal={modal} setModal={setModal} />
-        <Hero />
-        <Services />
-        <Story />
-        <Trust />
-        <Choose />
+        <section id="home">
+          <Hero />
+        </section>
+        <section id="services">
+          <Services />
+        </section>
+        <section id="story">
+          <Story />
+        </section>
+        <section id="trust">
+          <Trust />
+        </section>
+        <section id="choose">
+          <Choose modal={modal} setModal={setModal} />
+        </section>
         <Footer />
       </div>
     </div>

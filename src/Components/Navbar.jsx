@@ -9,8 +9,13 @@ import {
 import { RxHamburgerMenu } from "react-icons/rx";
 import { useState } from "react";
 
+// eslint-disable-next-line react/prop-types
 const Navbar = ({ modal, setModal }) => {
-  console.log(modal);
+  const [activeLink, setActiveLink] = useState("home");
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+  };
   const [sidebar, setSidebar] = useState(false);
   return (
     <div className="relative">
@@ -54,11 +59,75 @@ const Navbar = ({ modal, setModal }) => {
           </div>
           <div className="hidden lg:md:flex items-center gap-x-16">
             <ul className="flex items-center gap-x-6">
-              <li>Home</li>
-              <li>About us</li>
-              <li>Appointments</li>
-              <li>Services</li>
-              <li>Help</li>
+              <li>
+                <a
+                  href="#home"
+                  className={` ${
+                    activeLink === "home"
+                      ? "font-semibold text-green-500"
+                      : "text-gray-600"
+                  }`}
+                  onClick={() => handleLinkClick("home")}
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a
+                  href="#services"
+                  className={` ${
+                    activeLink === "services"
+                      ? "font-semibold text-green-500"
+                      : "text-gray-600"
+                  }`}
+                  onClick={() => handleLinkClick("services")}
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a
+                  href="#story"
+                  className={` ${
+                    activeLink === "story"
+                      ? "font-semibold text-green-500"
+                      : "text-gray-600"
+                  }`}
+                  onClick={() => handleLinkClick("story")}
+                >
+                  Story
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a
+                  href="#trust"
+                  className={` ${
+                    activeLink === "trust"
+                      ? "font-semibold text-green-500"
+                      : "text-gray-600"
+                  }`}
+                  onClick={() => handleLinkClick("trust")}
+                >
+                  Trust
+                </a>
+              </li>
+              <li>
+                {" "}
+                <a
+                  href="#choose"
+                  className={` ${
+                    activeLink === "choose"
+                      ? "font-semibold text-green-500"
+                      : "text-gray-600"
+                  }`}
+                  onClick={() => handleLinkClick("choose")}
+                >
+                  Choose Us
+                </a>
+              </li>
             </ul>
             <span>
               <button

@@ -2,22 +2,36 @@ const Services = () => {
   return (
     <div className="w-full font-Lato pb-20">
       <div className="py-12 w-full flex flex-col items-center justify-center">
-        <h1 className="text-xl">Enhanced Quality Care Service</h1>
-        <h1 className="text-4xl font-lora font-semibold text-green-500 hidden lg:md:flex">
-          Eldergarten Oldage Care Home
+        <h1 data-aos="zoom-in" data-aos-duration="1050" className="text-xl">
+          Enhanced Quality Care Service
         </h1>
-        <h1 className="text-4xl font-lora font-semibold text-green-500 lg:md:hidden flex text-center pt-2">
-          Eldergarten Oldage Care Home
+        <h1
+          data-aos="zoom-in"
+          data-aos-duration="1050"
+          className="text-4xl font-lora font-semibold text-green-500 hidden lg:md:flex"
+        >
+          Receive care in the comfort of your home
+        </h1>
+        <h1
+          data-aos="zoom-in"
+          data-aos-duration="1050"
+          className="text-4xl font-lora font-semibold text-green-500 lg:md:hidden flex text-center pt-2"
+        >
+          Receive care in the comfort of your home
         </h1>
       </div>
-      <div className="flex flex-col lg:md:flex-row items-center justify-center gap-x-8">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1050"
+        className="flex flex-col lg:md:flex-row items-center justify-center gap-x-8"
+      >
         <div className="py-4 lg:md:py-0">
           <img
             src="service1.webp"
             alt="pexels"
             className="h-[27rem] w-80 rounded-3xl object-cover"
           />
-          <span className="bg-green-100 rounded-tl-3xl rounded-br-3xl">
+          <span data-aos="zoom-in" data-aos-duration="1050">
             <h1 className="text-2xl font-medium pt-2">
               Regular Health Monitoring
             </h1>
@@ -33,13 +47,13 @@ const Services = () => {
           </span>
         </div>
         {/* sexond card */}
-        <div>
+        <div data-aos="fade-up" data-aos-duration="1050">
           <img
             src="service2.webp"
             alt="pexels"
             className="h-[27rem] w-80 rounded-3xl object-cover"
           />
-          <span>
+          <span data-aos="zoom-in" data-aos-duration="1050">
             <h1 className="text-2xl font-medium pt-2">
               Physiotherapy Services
             </h1>
@@ -55,13 +69,13 @@ const Services = () => {
           </span>
         </div>
         {/* third card */}
-        <div>
+        <div data-aos="fade-up" data-aos-duration="1050">
           <img
             src="service3.webp"
             alt="pexels"
             className="h-[27rem] w-80 rounded-3xl object-cover"
           />
-          <span className="bg-red-500">
+          <span data-aos="zoom-in" data-aos-duration="1050">
             <h1 className="text-2xl font-medium pt-2">
               Geriatrics & Nursing Care
             </h1>

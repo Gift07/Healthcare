@@ -11,6 +11,10 @@ const Modal = ({ modal, setModal }) => {
     other_notes: "",
   });
   const [selectedValue, setSelectedValue] = useState("");
+  const handleSelectChange = (event) => {
+    setSelectedValue(event.target.value);
+    console.log(setSelectedValue);
+  };
 
   const handleChange = (e) => {
     setFormData({
@@ -22,13 +26,16 @@ const Modal = ({ modal, setModal }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // form submitting logic
+    const mailtoUrl = `mailto:care@ancienthealinghcs.comsubject=${encodeURIComponent(
+      "Form fron Ancient Healing Website"
+    )}&body=${encodeURIComponent(formData)}`;
+    window.location.href = mailtoUrl;
   };
-  console.log(formData.care);
 
   return (
     <div className="w-full h-full bg-green-600 bg-opacity-30 backdrop-blur-md fixed">
       <div className="w-full h-full flex items-center justify-center">
-        <div className="w-3/5 py-3 bg-white rounded-xl">
+        <div className="w-11/12 lg:md:w-3/5 py-3 bg-white rounded-xl">
           <div className="w-full flex items-center justify-end px-8 py-2 text-xl">
             <div
               onClick={() => setModal(!modal)}
@@ -42,10 +49,10 @@ const Modal = ({ modal, setModal }) => {
               Fill out Our Form{" "}
             </h1>
           </div>
-          <div className="w-full px-16">
+          <div className="w-full lg:md:px-16 px-4">
             <form onSubmit={(e) => handleSubmit(e)} className="w-full">
-              <div className="w-full flex items-center gap-x-4">
-                <div className="w-1/2 mb-3">
+              <div className="w-full lg:md:flex flex flex-col lg:md:flex-row lg:md:items-center gap-x-4">
+                <div className="w-full lg:md:w-1/2 mb-3">
                   <label className="block mb-2 text-sm font-medium text-gray-900">
                     FirstName
                   </label>
@@ -56,9 +63,10 @@ const Modal = ({ modal, setModal }) => {
                     onChange={(e) => handleChange(e)}
                     className=" outline-none border border-green-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 bg-green-100"
                     placeholder="John"
+                    required
                   />
                 </div>
-                <div className="w-1/2 mb-3">
+                <div className="w-full lg:md:w-1/2 mb-3">
                   <label className="block mb-2 text-sm font-medium text-gray-900 ">
                     Lastname
                   </label>
@@ -68,11 +76,12 @@ const Modal = ({ modal, setModal }) => {
                     onChange={(e) => handleChange(e)}
                     className=" outline-none border border-green-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 bg-green-100"
                     placeholder="Doe"
+                    required
                   />
                 </div>
               </div>
-              <div className="w-full flex items-center gap-x-4">
-                <div className="w-1/2 mb-3">
+              <div className="w-full lg:md:flex flex flex-col lg:md:flex-row lg:md:items-center gap-x-4">
+                <div className="w-full lg:md:w-1/2 mb-3">
                   <label className="block mb-2 text-sm font-medium text-gray-900">
                     Phone Number
                   </label>
@@ -82,9 +91,10 @@ const Modal = ({ modal, setModal }) => {
                     onChange={(e) => handleChange(e)}
                     className=" outline-none border border-green-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 bg-green-100"
                     placeholder="1202345869"
+                    required
                   />
                 </div>
-                <div className="w-1/2 mb-3">
+                <div className="w-full lg:md:w-1/2 mb-3">
                   <label className="block mb-2 text-sm font-medium text-gray-900 ">
                     Email Address
                   </label>
@@ -94,6 +104,7 @@ const Modal = ({ modal, setModal }) => {
                     onChange={(e) => handleChange(e)}
                     className=" outline-none border border-green-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 bg-green-100"
                     placeholder="johndoe@email.com"
+                    required
                   />
                 </div>
               </div>
@@ -103,11 +114,11 @@ const Modal = ({ modal, setModal }) => {
                 </label>
                 <select
                   name="care"
-                  value={formData.care}
-                  onChange={(e) => handleChange(e)}
+                  value={selectedValue}
+                  onChange={handleSelectChange}
                   className=" outline-none border border-green-300 text-gray-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5 bg-green-100"
                 >
-                  <option value="my self" className="bg-green-100 py-2">
+                  <option value="my_self" className="bg-green-100 py-2">
                     My Self
                   </option>
                   <option value="other" className="bg-green-100 py-2">
